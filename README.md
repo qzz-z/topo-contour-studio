@@ -1,5 +1,7 @@
 # 海拔等高线排版生成器 · Topo Contour Studio
 
+![Windows build](https://github.com/qzz-z/topo-contour-studio/actions/workflows/build.yml/badge.svg)
+
 把 DEM（数字高程模型）自动变成一张可直接排版的 **A3 海拔等高线海报**，并附赠透明底线稿。版式、配色、标注、比例尺、山脊剖面都会按地形数据自动生成。
 
 ![四种配色预览](docs/contact_sheet.png)
