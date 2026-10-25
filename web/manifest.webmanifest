@@ -1,0 +1,14 @@
+﻿{
+  "name": "Topo Contour Studio",
+  "short_name": "Topo Studio",
+  "description": "把 DEM 自动生成 A3 海拔等高线海报",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#F3EEE3",
+  "theme_color": "#F3EEE3",
+  "lang": "zh-CN",
+  "icons": [
+    { "src": "/icon-192.png", "sizes": "192x192", "type": "image/png" },
+    { "src": "/icon-512.png", "sizes": "512x512", "type": "image/png" }
+  ]
+}

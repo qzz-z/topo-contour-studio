@@ -1,0 +1,24 @@
+{
+  "name": "grossglockner",
+  "title": "大格洛克纳",
+  "latin": "GROSSGLOCKNER",
+  "range": "阿尔卑斯山脉 · 奥地利",
+  "caption": "阿尔卑斯东段的高峰，",
+  "sourceShort": "SRTM 1″  ·  30 M DEM",
+  "focus": {
+    "lat": 47.074,
+    "lon": 12.694
+  },
+  "bounds": {
+    "west": 12.496149563313013,
+    "east": 12.891850436686989,
+    "south": 46.939253323751345,
+    "north": 47.20874667624865
+  },
+  "width": 900,
+  "height": 900,
+  "min": 823,
+  "max": 3674,
+  "source": "SRTM 1 arc-second (N47E012 + N46E012) · resampled to 900 px",
+  "sourceUrl": "https://s3.amazonaws.com/elevation-tiles-prod/skadi/N47/N47E012.hgt.gz"
+}

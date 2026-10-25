@@ -1,0 +1,21 @@
+﻿# dependencies
+node_modules/
+.npm-cache/
+.cache/
+
+# build artifacts
+release/
+output/
+uploads/
+work/
+*.log
+
+# raw DEM downloads (bundled crops live in data/*.bin.gz)
+data/*.hgt
+data/*.hgt.gz
+
+# OS / editor
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/

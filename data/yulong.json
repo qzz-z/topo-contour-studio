@@ -1,0 +1,24 @@
+{
+  "name": "yulong",
+  "title": "玉龙雪山",
+  "latin": "JADE DRAGON",
+  "range": "横断山脉 · 中国",
+  "caption": "横断山脉的南端雪峰，",
+  "sourceShort": "SRTM 1″  ·  30 M DEM",
+  "focus": {
+    "lat": 27.1,
+    "lon": 100.18
+  },
+  "bounds": {
+    "west": 100.0084534900448,
+    "east": 100.35154650995521,
+    "south": 26.94728710025153,
+    "north": 27.252712899748474
+  },
+  "width": 900,
+  "height": 900,
+  "min": 1694,
+  "max": 5428,
+  "source": "SRTM 1 arc-second (N27E100 + N26E100) · resampled to 900 px",
+  "sourceUrl": "https://s3.amazonaws.com/elevation-tiles-prod/skadi/N27/N27E100.hgt.gz"
+}

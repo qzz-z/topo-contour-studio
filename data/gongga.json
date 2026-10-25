@@ -1,0 +1,26 @@
+{
+  "name": "gongga",
+  "title": "贡嘎山",
+  "latin": "MINYA KONKA",
+  "range": "横断山脉 · 中国",
+  "focus": {
+    "lat": 29.595,
+    "lon": 101.879
+  },
+  "lat": 29.595,
+  "lon": 101.879,
+  "bounds": {
+    "west": 101.6,
+    "east": 102.04,
+    "south": 29.41,
+    "north": 29.79
+  },
+  "width": 900,
+  "height": 894,
+  "min": 2141,
+  "max": 7432,
+  "source": "SRTM 1 arc-second · N29E101 + N29E102 · resampled to 900 px",
+  "sourceUrl": "https://s3.amazonaws.com/elevation-tiles-prod/skadi/N29/N29E101.hgt.gz",
+  "caption": "横断山脉主峰。冰川、刃脊与峡谷，",
+  "sourceShort": "SRTM 1″  ·  30 M DEM"
+}

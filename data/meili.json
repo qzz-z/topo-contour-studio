@@ -1,0 +1,24 @@
+{
+  "name": "meili",
+  "title": "梅里雪山",
+  "latin": "MEILI SNOW",
+  "range": "横断山脉 · 中国",
+  "caption": "澜沧江畔的雪山群，",
+  "sourceShort": "SRTM 1″  ·  30 M DEM",
+  "focus": {
+    "lat": 28.45,
+    "lon": 98.7
+  },
+  "bounds": {
+    "west": 98.52631126344237,
+    "east": 98.87368873655764,
+    "south": 28.297287100251527,
+    "north": 28.60271289974847
+  },
+  "width": 900,
+  "height": 900,
+  "min": 1935,
+  "max": 6643,
+  "source": "SRTM 1 arc-second (N28E098) · resampled to 900 px",
+  "sourceUrl": "https://s3.amazonaws.com/elevation-tiles-prod/skadi/N28/N28E098.hgt.gz"
+}

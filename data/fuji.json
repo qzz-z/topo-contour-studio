@@ -1,0 +1,24 @@
+{
+  "name": "fuji",
+  "title": "富士山",
+  "latin": "MOUNT FUJI",
+  "range": "富士箱根伊豆 · 日本",
+  "caption": "火山锥与雪线，",
+  "sourceShort": "SRTM 1″  ·  30 M DEM",
+  "focus": {
+    "lat": 35.3606,
+    "lon": 138.7274
+  },
+  "bounds": {
+    "west": 138.5401430531123,
+    "east": 138.91465694688767,
+    "south": 35.207887100251526,
+    "north": 35.51331289974847
+  },
+  "width": 900,
+  "height": 900,
+  "min": 56,
+  "max": 3757,
+  "source": "SRTM 1 arc-second (N35E138) · resampled to 900 px",
+  "sourceUrl": "https://s3.amazonaws.com/elevation-tiles-prod/skadi/N35/N35E138.hgt.gz"
+}

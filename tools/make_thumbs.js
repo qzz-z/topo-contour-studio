@@ -1,0 +1,4 @@
+﻿'use strict';
+const fs=require('fs');const sharp=require('sharp');const {loadPreset}=require('../src/lib/dem');const {buildScene,svgToPngBuffer}=require('../src/lib/pipeline');const {renderArt}=require('../src/lib/render');const {styles}=require('../src/styles');
+const ids=['gongga','matterhorn','yulong','fuji','montblanc','grossglockner','meili','namcha'];
+(async()=>{for(const id of ids){try{const dem=loadPreset(id,'data');const scene=buildScene(dem,{interval:200,indexEvery:5,smooth:2.2,simplify:.75});const art=renderArt({terrain:scene.terrain,contours:scene.contours,style:styles.atlas,mode:'color',tone:'ink'});const {buffer}=await svgToPngBuffer(art.svg,{width:440});await sharp(buffer).resize(400,400,{fit:'cover'}).flatten({background:'#f3eee3'}).png({compressionLevel:9}).toFile(`web/thumbs/${id}.png`);console.log(id,dem.title,art.width.toFixed(1),art.height.toFixed(1));}catch(e){console.error(id,e.message)}}})();

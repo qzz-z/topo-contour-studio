@@ -1,0 +1,24 @@
+{
+  "name": "matterhorn",
+  "title": "马特洪峰",
+  "latin": "MATTERHORN",
+  "range": "阿尔卑斯山脉 · 瑞士",
+  "caption": "阿尔卑斯山脉的孤峰，",
+  "sourceShort": "SRTM 1″  ·  30 M DEM",
+  "focus": {
+    "lat": 45.976,
+    "lon": 7.658
+  },
+  "bounds": {
+    "west": 7.470571672472747,
+    "east": 7.845428327527253,
+    "south": 45.8457448796263,
+    "north": 46.106255120373696
+  },
+  "width": 900,
+  "height": 900,
+  "min": 1184,
+  "max": 4480,
+  "source": "SRTM 1 arc-second (N45E007 + N46E007) · resampled to 900 px",
+  "sourceUrl": "https://s3.amazonaws.com/elevation-tiles-prod/skadi/N45/N45E007.hgt.gz"
+}

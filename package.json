@@ -1,0 +1,93 @@
+{
+  "name": "topo-contour-studio",
+  "version": "1.2.0",
+  "private": true,
+  "type": "commonjs",
+  "main": "electron-main.js",
+  "description": "A3 elevation contour poster generator with GUI, DEM upload, live preview, vector SVG, 300 dpi PNG and PDF output.",
+  "engines": {
+    "node": ">=18"
+  },
+  "scripts": {
+    "start": "node server.js",
+    "start:web": "node server.js",
+    "electron": "electron .",
+    "app": "electron .",
+    "dist": "electron-builder --win nsis",
+    "dist:dir": "electron-builder --dir --win",
+    "build": "node generate.js --preset gongga --style all && node tools/contact_sheet.js",
+    "build:preview": "node generate.js --preset gongga --style all --preview 1200 && node tools/contact_sheet.js",
+    "build:atlas": "node generate.js --preset gongga --style atlas"
+  },
+  "dependencies": {
+    "archiver": "^7.0.1",
+    "busboy": "^1.6.0",
+    "fontkit": "^2.0.4",
+    "pdfkit": "^0.17.2",
+    "sharp": "^0.35.5",
+    "svg-to-pdfkit": "^0.1.8"
+  },
+  "devDependencies": {
+    "electron": "^38.8.6",
+    "electron-builder": "^26.0.12"
+  },
+  "build": {
+    "appId": "com.topocontour.studio",
+    "productName": "Topo Contour Studio",
+    "copyright": "Copyright © 2026 Topo Contour Studio",
+    "asar": false,
+    "npmRebuild": false,
+    "directories": {
+      "output": "release",
+      "buildResources": "build"
+    },
+    "files": [
+      "electron-main.js",
+      "server.js",
+      "generate.js",
+      "src/**/*",
+      "web/**/*",
+      "data/**/*",
+      "package.json",
+      "node_modules/**/*",
+      "!**/*.map",
+      "!**/node_modules/**/{test,tests,__tests__,example,examples,doc,docs}/**",
+      "!**/node_modules/**/*.md",
+      "!**/node_modules/**/*.ts"
+    ],
+    "win": {
+      "target": [
+        {
+          "target": "nsis",
+          "arch": [
+            "x64"
+          ]
+        }
+      ],
+      "icon": "build/icon.ico",
+      "artifactName": "TopoContourStudio-${version}.exe",
+      "signAndEditExecutable": false
+    },
+    "portable": {
+      "artifactName": "TopoContourStudio-${version}.exe",
+      "requestExecutionLevel": "user"
+    },
+    "compression": "normal",
+    "nsis": {
+      "oneClick": true,
+      "perMachine": false,
+      "allowToChangeInstallationDirectory": false,
+      "createDesktopShortcut": true,
+      "createStartMenuShortcut": true,
+      "shortcutName": "Topo Contour Studio",
+      "artifactName": "TopoContourStudio-Setup-${version}.exe",
+      "deleteAppDataOnUninstall": false,
+      "runAfterFinish": true
+    },
+    "electronLanguages": [
+      "zh-CN",
+      "en-US"
+    ]
+  },
+  "author": "Topo Contour Studio"
+}

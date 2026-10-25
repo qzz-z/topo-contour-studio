@@ -1,0 +1,24 @@
+{
+  "name": "montblanc",
+  "title": "勃朗峰",
+  "latin": "MONT BLANC",
+  "range": "阿尔卑斯山脉 · 法国/意大利",
+  "caption": "冰川环绕的花岗岩山体，",
+  "sourceShort": "SRTM 1″  ·  30 M DEM",
+  "focus": {
+    "lat": 45.832,
+    "lon": 6.865
+  },
+  "bounds": {
+    "west": 6.658718296135622,
+    "east": 7.071281703864378,
+    "south": 45.68827021200144,
+    "north": 45.97572978799856
+  },
+  "width": 900,
+  "height": 900,
+  "min": 549,
+  "max": 4795,
+  "source": "SRTM 1 arc-second (N45E006 + N46E006 + N45E007 + N46E007) · resampled to 900 px",
+  "sourceUrl": "https://s3.amazonaws.com/elevation-tiles-prod/skadi/N45/N45E006.hgt.gz"
+}

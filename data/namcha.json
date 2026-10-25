@@ -1,0 +1,24 @@
+{
+  "name": "namcha",
+  "title": "南迦巴瓦",
+  "latin": "NAMCHA BARWA",
+  "range": "喜马拉雅山脉 · 中国",
+  "caption": "雅鲁藏布江畔的刃脊，",
+  "sourceShort": "SRTM 1″  ·  30 M DEM",
+  "focus": {
+    "lat": 29.627,
+    "lon": 95.055
+  },
+  "bounds": {
+    "west": 94.87931891910537,
+    "east": 95.23068108089464,
+    "south": 29.474287100251527,
+    "north": 29.77971289974847
+  },
+  "width": 900,
+  "height": 900,
+  "min": 1908,
+  "max": 7330,
+  "source": "SRTM 1 arc-second (N29E095 + N29E094) · resampled to 900 px",
+  "sourceUrl": "https://s3.amazonaws.com/elevation-tiles-prod/skadi/N29/N29E095.hgt.gz"
+}
