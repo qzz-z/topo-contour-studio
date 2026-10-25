@@ -1,4 +1,4 @@
-﻿# 海拔等高线排版生成器 · Topo Contour Studio
+# 海拔等高线排版生成器 · Topo Contour Studio
 
 把 DEM（数字高程模型）自动变成一张可直接排版的 **A3 海拔等高线海报**，并附赠透明底线稿。版式、配色、标注、比例尺、山脊剖面都会按地形数据自动生成。
 
@@ -22,7 +22,7 @@
 - 首次启动可能需要 **10–30 秒**，之后会直接进入界面
 - 输出文件在 **文档 / Topo Contour Studio / output**
 - 安装包未做商业代码签名，Windows 可能提示“未知发布者”：点“更多信息” → “仍要运行”
-- 免安装绿色版在 `release/win-unpacked/`，整个文件夹一起移动即可
+- 本地构建时，免安装绿色版位于 `release/win-unpacked/`
 
 ![软件界面](docs/ui.png)
 
@@ -200,9 +200,10 @@ src/
     pdf.js                  SVG → PDF（内嵌字体）
     pipeline.js             预览 / 生成共用的流水线
 data/
-  gongga.json               示例元数据
-  gongga.bin.gz             900 × 894 Int16 DEM（gzip）
+  *.json                    8 座山峰的元数据
+  *.bin.gz                  8 座山峰的 Int16 DEM（gzip）
 tools/prepare_mountains.js 重建 8 座山峰的裁切 DEM
+tools/publish_github.js    通过 GitHub API 发布仓库与 Release
 tools/make_thumbs.js       生成山峰缩略图
 tools/prepare_dem.js       重建贡嘎山示例数据
 output/                     生成结果
@@ -212,7 +213,7 @@ output/                     生成结果
 
 ## 数据与许可
 
-- 示例 DEM：SRTM 1 arc-second（N29E101 + N29E102），来自 [AWS Terrain Tiles](https://s3.amazonaws.com/elevation-tiles-prod/skadi/)，公有领域。
+- 示例 DEM：SRTM 1 arc-second（8 座山峰，含 N29E101/N29E102 等瓦片），来自 [AWS Terrain Tiles](https://s3.amazonaws.com/elevation-tiles-prod/skadi/)，公有领域。
 - SRTM 的高程和位置存在约 ±16 m 量级的误差；山顶、深谷和陡崖处的等高线只适合视觉排版，不应作为测绘成果使用。
 - 代码：MIT。
 - Noto 字体：SIL Open Font License；STSong / SimHei 为系统字体，请按本机授权使用。
